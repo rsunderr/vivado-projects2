@@ -1,0 +1,296 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 25 12:28:44 2026
+| Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_pwm_2x8_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_pwm_2x8_0_0 (xilinx.com:user:axi_pwm_2x8:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 25 12:28:25 2026
+| Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_pwm_2x8_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_axi_pwm_2x8_0_0 (xilinx.com:user:axi_pwm_2x8:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_pwm_2x8_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'FCLK'
+
+-Upgrade has added port 'pwm_signals0'
+
+-Upgrade has added port 'pwm_signals1'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 25 10:59:04 2026
+| Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_16_channel_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_16_channel_0_0 (xilinx.com:user:axi_pwm_2x8ch:1.1 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Feb 25 10:58:11 2026
+| Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_16_channel_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_axi_16_channel_0_0 from xilinx.com:user:axi_16_channel:1.0 (Rev. 1) to xilinx.com:user:axi_pwm_2x8ch:1.1 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_16_channel_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'signal_0'
+
+-Upgrade has removed port 'signal_1'
+
+-Upgrade has removed port 'signal_10'
+
+-Upgrade has removed port 'signal_11'
+
+-Upgrade has removed port 'signal_12'
+
+-Upgrade has removed port 'signal_13'
+
+-Upgrade has removed port 'signal_14'
+
+-Upgrade has removed port 'signal_15'
+
+-Upgrade has removed port 'signal_2'
+
+-Upgrade has removed port 'signal_3'
+
+-Upgrade has removed port 'signal_4'
+
+-Upgrade has removed port 'signal_5'
+
+-Upgrade has removed port 'signal_6'
+
+-Upgrade has removed port 'signal_7'
+
+-Upgrade has removed port 'signal_8'
+
+-Upgrade has removed port 'signal_9'
+
+-Upgrade has added port 'FCLK'
+
+-Upgrade has added port 'pwm_sig0'
+
+-Upgrade has added port 'pwm_sig1'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 21:07:10 2026
+| Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_pwm_12ch_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_axi_pwm_12ch_0_0 (xilinx.com:user:axi_pwm_12ch:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_pwm_12ch_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'signal_0'
+
+-Upgrade has removed port 'signal_1'
+
+-Upgrade has removed port 'signal_10'
+
+-Upgrade has removed port 'signal_11'
+
+-Upgrade has removed port 'signal_2'
+
+-Upgrade has removed port 'signal_3'
+
+-Upgrade has removed port 'signal_4'
+
+-Upgrade has removed port 'signal_5'
+
+-Upgrade has removed port 'signal_6'
+
+-Upgrade has removed port 'signal_7'
+
+-Upgrade has removed port 'signal_8'
+
+-Upgrade has removed port 'signal_9'
+
+-Upgrade has added port 'FCLK'
+
+-Upgrade has added port 'pwm_sig0'
+
+-Upgrade has added port 'pwm_sig1'
+
+-Upgrade has added port 'pwm_sig10'
+
+-Upgrade has added port 'pwm_sig11'
+
+-Upgrade has added port 'pwm_sig2'
+
+-Upgrade has added port 'pwm_sig3'
+
+-Upgrade has added port 'pwm_sig4'
+
+-Upgrade has added port 'pwm_sig5'
+
+-Upgrade has added port 'pwm_sig6'
+
+-Upgrade has added port 'pwm_sig7'
+
+-Upgrade has added port 'pwm_sig8'
+
+-Upgrade has added port 'pwm_sig9'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 19:52:21 2026
+| Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_pwm_12ch_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_pwm_12ch_0_0 (xilinx.com:user:axi_pwm_12ch:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 20 19:50:40 2026
+| Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_pwm_12ch_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_axi_pwm_12ch_0_0 (xilinx.com:user:axi_pwm_12ch:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_pwm_12ch_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'signal_0'
+
+-Upgrade has added port 'signal_1'
+
+-Upgrade has added port 'signal_10'
+
+-Upgrade has added port 'signal_11'
+
+-Upgrade has added port 'signal_2'
+
+-Upgrade has added port 'signal_3'
+
+-Upgrade has added port 'signal_4'
+
+-Upgrade has added port 'signal_5'
+
+-Upgrade has added port 'signal_6'
+
+-Upgrade has added port 'signal_7'
+
+-Upgrade has added port 'signal_8'
+
+-Upgrade has added port 'signal_9'
+
+

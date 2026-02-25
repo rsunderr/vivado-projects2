@@ -1,0 +1,109 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9C2D3EA79C2D3EA7",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../lab2_7_seg.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "bcd_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "dp": {
+        "direction": "O"
+      },
+      "seg": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      }
+    },
+    "components": {
+      "bcd_0": {
+        "vlnv": "xilinx.com:module_ref:bcd:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_bcd_0_0",
+        "xci_path": "ip\\design_1_bcd_0_0\\design_1_bcd_0_0.xci",
+        "inst_hier_path": "bcd_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bcd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_in": {
+            "direction": "I"
+          },
+          "num": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "sgmt": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "en": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "dot": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "bcd_0_dot": {
+        "ports": [
+          "bcd_0/dot",
+          "dp"
+        ]
+      },
+      "bcd_0_en": {
+        "ports": [
+          "bcd_0/en",
+          "an"
+        ]
+      },
+      "bcd_0_sgmt": {
+        "ports": [
+          "bcd_0/sgmt",
+          "seg"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "bcd_0/clk_in"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "bcd_0/num"
+        ]
+      }
+    }
+  }
+}
