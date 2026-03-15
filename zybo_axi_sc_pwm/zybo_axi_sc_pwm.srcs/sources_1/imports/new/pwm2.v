@@ -25,22 +25,23 @@ module pwm2#(parameter N=32)(input PL_CLK, input [N-1:0] W, output SIG); // assu
 wire [N-1:0] WIDTH;
 wire [N-1:0] PERIOD;
 reg [N-1:0] counter = 0;
-reg output_buffer = 0;
+reg output_buf = 0;
 
 assign WIDTH = W * 200; // * 2 * 100 for correction
 assign PERIOD = WIDTH * 2;
 
-// increment counter on clock
+// clock loop
 always@(posedge PL_CLK) begin
-
-    if (counter < PERIOD - 1)   begin
+    if (counter < PERIOD - 1)
+    begin
         counter <= counter + 1; // use -1 to account for rising edge when counter = PERIOD
+        // output = counter < pulse width
+        if (counter < WIDTH)    output_buf <= 1'b1;
+        else                    output_buf <= 1'b0;
     end
-    else begin
-        counter <= 0;
-    end
-    output_buffer <= (counter < WIDTH); // SIG = 1 if counter < width, = 0 else
+    else counter <= 0; // reset counter
+    
 end
 // assign output SIG to buffer value
-assign SIG = output_buffer;
+assign SIG = output_buf;
 endmodule

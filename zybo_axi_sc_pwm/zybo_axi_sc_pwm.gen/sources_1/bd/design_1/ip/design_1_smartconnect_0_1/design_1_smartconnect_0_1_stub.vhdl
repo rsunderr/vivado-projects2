@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Fri Feb 20 21:40:16 2026
+-- Date        : Fri Feb 20 21:40:10 2026
 -- Host        : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/design_1_smartconnect_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_smartconnect_0_1 -prefix
+--               design_1_smartconnect_0_1_ design_1_smartconnect_0_1_stub.vhdl
 -- Design      : design_1_smartconnect_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

@@ -1,31 +1,42 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.93163",
-   "Default View_TopLeft":"10,-85",
+   "Default View_ScaleFactor":"2.0",
+   "Default View_TopLeft":"-325,-227",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1000 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1000 -y 90 -defaultsOSRD
-preplace portBus je -pg 1 -lvl 4 -x 1000 -y 260 -defaultsOSRD
-preplace portBus jd -pg 1 -lvl 4 -x 1000 -y 290 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 210 -y 120 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 2 -x 550 -y 250 -defaultsOSRD
-preplace inst axi_pwm_2x8_0 -pg 1 -lvl 3 -x 840 -y 280 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 240 410 330 680
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 400 340 690
-preplace netloc processing_system7_0_FCLK_CLK1 1 1 2 NJ 160 680
-preplace netloc axi_pwm_2x8_0_pwm_signals0 1 3 1 980J 260n
-preplace netloc axi_pwm_2x8_0_pwm_signals1 1 3 1 NJ 290
-preplace netloc processing_system7_0_DDR 1 1 3 NJ 60 NJ 60 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 420J 90 NJ 90 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 420 120n
-preplace netloc smartconnect_0_M00_AXI 1 2 1 N 250
-levelinfo -pg 1 0 210 550 840 1000
-pagesize -pg 1 -db -bbox -sgen 0 0 1110 370
+preplace port DDR -pg 1 -lvl 4 -x 1060 -y 130 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1060 -y 160 -defaultsOSRD
+preplace port port-id_jc_rst -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace portBus je -pg 1 -lvl 4 -x 1060 -y 230 -defaultsOSRD
+preplace portBus jd -pg 1 -lvl 4 -x 1060 -y 260 -defaultsOSRD
+preplace portBus jc_out -pg 1 -lvl 4 -x 1060 -y 100 -defaultsOSRD
+preplace portBus jc_in -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 210 -y 150 -defaultsOSRD
+preplace inst axi_pwm_2x8_0 -pg 1 -lvl 3 -x 890 -y 250 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 210 -y 340 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 580 -y 440 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 1 -x 210 -y 450 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 580 -y 230 -defaultsOSRD
+preplace netloc axi_pwm_2x8_0_pwm_signals0 1 3 1 1030J 230n
+preplace netloc axi_pwm_2x8_0_pwm_signals1 1 3 1 NJ 260
+preplace netloc jc_in_1 1 0 1 NJ 330
+preplace netloc jc_rst_1 1 0 1 20 350n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 10 430 140 730
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 420 230n
+preplace netloc processing_system7_0_GPIO_O 1 1 3 410J 100 NJ 100 NJ
+preplace netloc util_vector_logic_0_Res 1 2 1 720 270n
+preplace netloc util_vector_logic_1_Res 1 1 1 N 450
+preplace netloc xlconcat_0_dout 1 1 1 400 90n
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 130 NJ 130 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 150 720J 160 NJ
+preplace netloc smartconnect_0_M00_AXI 1 2 1 N 230
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440 190n
+levelinfo -pg 1 0 210 580 890 1060
+pagesize -pg 1 -db -bbox -sgen -120 0 1190 510
 "
 }
 {
-   "da_axi4_cnt":"1",
+   "da_axi4_cnt":"2",
    "da_ps7_cnt":"1"
 }

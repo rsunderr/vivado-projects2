@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xBF68C5B100FD05C",
+      "boundary_crc": "0x3BD8F86983EBFF09",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../zybo_axi_sc_pwm.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -11,8 +11,11 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "smartconnect_0": "",
-      "axi_pwm_2x8_0": ""
+      "axi_pwm_2x8_0": "",
+      "xlconcat_0": "",
+      "util_vector_logic_0": "",
+      "util_vector_logic_1": "",
+      "smartconnect_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -194,6 +197,19 @@
         "direction": "O",
         "left": "7",
         "right": "0"
+      },
+      "jc_out": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "jc_in": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "jc_rst": {
+        "direction": "I"
       }
     },
     "components": {
@@ -223,7 +239,7 @@
             "value": "50.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "1.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -283,7 +299,7 @@
             "value": "50000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "1000000"
+            "value": "10000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -352,10 +368,10 @@
             "value": "0"
           },
           "PCW_EN_CLK1_PORT": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_EMIO_GPIO": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_ENET0": {
             "value": "1"
@@ -378,9 +394,6 @@
           "PCW_FCLK0_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
           },
-          "PCW_FCLK_CLK1_BUF": {
-            "value": "TRUE"
-          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "50"
           },
@@ -390,11 +403,14 @@
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
           },
-          "PCW_FPGA_FCLK1_ENABLE": {
+          "PCW_GPIO_EMIO_GPIO_ENABLE": {
             "value": "1"
           },
-          "PCW_GPIO_EMIO_GPIO_ENABLE": {
-            "value": "0"
+          "PCW_GPIO_EMIO_GPIO_IO": {
+            "value": "4"
+          },
+          "PCW_GPIO_EMIO_GPIO_WIDTH": {
+            "value": "4"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
             "value": "1"
@@ -1365,6 +1381,58 @@
           }
         }
       },
+      "axi_pwm_2x8_0": {
+        "vlnv": "xilinx.com:user:axi_pwm_2x8:1.0",
+        "ip_revision": "5",
+        "xci_name": "design_1_axi_pwm_2x8_0_0",
+        "xci_path": "ip\\design_1_axi_pwm_2x8_0_0\\design_1_axi_pwm_2x8_0_0.xci",
+        "inst_hier_path": "axi_pwm_2x8_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "6",
+        "xci_name": "design_1_xlconcat_0_1",
+        "xci_path": "ip\\design_1_xlconcat_0_1\\design_1_xlconcat_0_1.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "3"
+          },
+          "IN1_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "design_1_util_vector_logic_0_0",
+        "xci_path": "ip\\design_1_util_vector_logic_0_0\\design_1_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "and"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "design_1_util_vector_logic_1_0",
+        "xci_path": "ip\\design_1_util_vector_logic_1_0\\design_1_util_vector_logic_1_0.xci",
+        "inst_hier_path": "util_vector_logic_1",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
       "smartconnect_0": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
         "ip_revision": "25",
@@ -1422,13 +1490,6 @@
             }
           }
         }
-      },
-      "axi_pwm_2x8_0": {
-        "vlnv": "xilinx.com:user:axi_pwm_2x8:1.0",
-        "ip_revision": "2",
-        "xci_name": "design_1_axi_pwm_2x8_0_0",
-        "xci_path": "ip\\design_1_axi_pwm_2x8_0_0\\design_1_axi_pwm_2x8_0_0.xci",
-        "inst_hier_path": "axi_pwm_2x8_0"
       }
     },
     "interface_nets": {
@@ -1470,25 +1531,56 @@
           "jd"
         ]
       },
+      "jc_in_1": {
+        "ports": [
+          "jc_in",
+          "xlconcat_0/In0"
+        ]
+      },
+      "jc_rst_1": {
+        "ports": [
+          "jc_rst",
+          "xlconcat_0/In1",
+          "util_vector_logic_1/Op1"
+        ]
+      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "smartconnect_0/aclk",
-          "axi_pwm_2x8_0/s00_axi_aclk"
-        ]
-      },
-      "processing_system7_0_FCLK_CLK1": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK1",
-          "axi_pwm_2x8_0/FCLK"
+          "axi_pwm_2x8_0/s00_axi_aclk",
+          "smartconnect_0/aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
-          "smartconnect_0/aresetn",
+          "util_vector_logic_0/Op1",
+          "smartconnect_0/aresetn"
+        ]
+      },
+      "processing_system7_0_GPIO_O": {
+        "ports": [
+          "processing_system7_0/GPIO_O",
+          "jc_out"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
           "axi_pwm_2x8_0/s00_axi_aresetn"
+        ]
+      },
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "util_vector_logic_1/Res",
+          "util_vector_logic_0/Op2"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "processing_system7_0/GPIO_I"
         ]
       }
     },

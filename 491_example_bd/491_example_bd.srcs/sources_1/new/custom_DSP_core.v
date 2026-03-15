@@ -21,7 +21,7 @@
 
 
 module custom_DSP_core(
-    input [1:0] in,
-    output [1:0] out
+    input DATA,
+    output SIGNAL
     );
 endmodule

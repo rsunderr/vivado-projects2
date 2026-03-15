@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xBF9B71B86C56B9EE",
+      "boundary_crc": "0x9F06C0355ABCA4A9",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../491_example_bd.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -11,11 +11,10 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "axi_dma_0": "",
       "axi_smc": "",
-      "custom_I2C_core_0": "",
-      "custom_DSP_core_0": "",
-      "axi_gpio_0": ""
+      "axi_gpio_0": "",
+      "PDM_0": "",
+      "custom_DSP_core_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -174,10 +173,11 @@
       }
     },
     "ports": {
-      "microphone": {
-        "direction": "I",
-        "left": "31",
-        "right": "0"
+      "Mic_Clock": {
+        "direction": "I"
+      },
+      "Mic_Data": {
+        "direction": "I"
       }
     },
     "components": {
@@ -335,10 +335,16 @@
           "PCW_EN_4K_TIMER": {
             "value": "0"
           },
+          "PCW_EN_EMIO_I2C1": {
+            "value": "1"
+          },
           "PCW_EN_ENET0": {
             "value": "1"
           },
           "PCW_EN_GPIO": {
+            "value": "1"
+          },
+          "PCW_EN_I2C1": {
             "value": "1"
           },
           "PCW_EN_QSPI": {
@@ -365,8 +371,23 @@
           "PCW_GPIO_PERIPHERAL_ENABLE": {
             "value": "0"
           },
+          "PCW_I2C0_RESET_ENABLE": {
+            "value": "0"
+          },
+          "PCW_I2C1_I2C1_IO": {
+            "value": "EMIO"
+          },
+          "PCW_I2C1_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_I2C_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
           "PCW_I2C_RESET_ENABLE": {
             "value": "1"
+          },
+          "PCW_I2C_RESET_SELECT": {
+            "value": "Share reset pin"
           },
           "PCW_IRQ_F2P_MODE": {
             "value": "DIRECT"
@@ -1322,61 +1343,6 @@
           }
         }
       },
-      "axi_dma_0": {
-        "vlnv": "xilinx.com:ip:axi_dma:7.1",
-        "ip_revision": "34",
-        "xci_name": "design_1_axi_dma_0_1",
-        "xci_path": "ip\\design_1_axi_dma_0_1\\design_1_axi_dma_0_1.xci",
-        "inst_hier_path": "axi_dma_0",
-        "interface_ports": {
-          "M_AXI_SG": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_SG",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          },
-          "M_AXI_MM2S": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_MM2S",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          },
-          "M_AXI_S2MM": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_S2MM",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          }
-        },
-        "addressing": {
-          "address_spaces": {
-            "Data_MM2S": {
-              "range": "4G",
-              "width": "32"
-            },
-            "Data_S2MM": {
-              "range": "4G",
-              "width": "32"
-            },
-            "Data_SG": {
-              "range": "4G",
-              "width": "32"
-            }
-          }
-        }
-      },
       "axi_smc": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
         "ip_revision": "25",
@@ -1404,35 +1370,42 @@
           }
         }
       },
-      "custom_I2C_core_0": {
-        "vlnv": "xilinx.com:module_ref:custom_I2C_core:1.0",
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "ip_revision": "35",
+        "xci_name": "design_1_axi_gpio_0_0",
+        "xci_path": "ip\\design_1_axi_gpio_0_0\\design_1_axi_gpio_0_0.xci",
+        "inst_hier_path": "axi_gpio_0"
+      },
+      "PDM_0": {
+        "vlnv": "xilinx.com:module_ref:PDM:1.0",
         "ip_revision": "1",
-        "xci_name": "design_1_custom_I2C_core_0_0",
-        "xci_path": "ip\\design_1_custom_I2C_core_0_0\\design_1_custom_I2C_core_0_0.xci",
-        "inst_hier_path": "custom_I2C_core_0",
+        "xci_name": "design_1_PDM_0_0",
+        "xci_path": "ip\\design_1_PDM_0_0\\design_1_PDM_0_0.xci",
+        "inst_hier_path": "PDM_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "custom_I2C_core",
+          "ref_name": "PDM",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "in": {
-            "direction": "I",
-            "left": "1",
-            "right": "0"
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
           },
-          "out": {
-            "direction": "O",
-            "left": "1",
-            "right": "0"
+          "DATA": {
+            "direction": "I"
+          },
+          "AUDIO": {
+            "direction": "O"
           }
         }
       },
       "custom_DSP_core_0": {
         "vlnv": "xilinx.com:module_ref:custom_DSP_core:1.0",
         "ip_revision": "1",
-        "xci_name": "design_1_custom_DSP_core_0_1",
-        "xci_path": "ip\\design_1_custom_DSP_core_0_1\\design_1_custom_DSP_core_0_1.xci",
+        "xci_name": "design_1_custom_DSP_core_0_2",
+        "xci_path": "ip\\design_1_custom_DSP_core_0_2\\design_1_custom_DSP_core_0_2.xci",
         "inst_hier_path": "custom_DSP_core_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -1440,31 +1413,20 @@
           "boundary_crc": "0x0"
         },
         "ports": {
-          "in": {
-            "direction": "I",
-            "left": "1",
-            "right": "0"
+          "DATA": {
+            "direction": "I"
           },
-          "out": {
-            "direction": "O",
-            "left": "1",
-            "right": "0"
+          "SIGNAL": {
+            "direction": "O"
           }
         }
-      },
-      "axi_gpio_0": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "ip_revision": "35",
-        "xci_name": "design_1_axi_gpio_0_0",
-        "xci_path": "ip\\design_1_axi_gpio_0_0\\design_1_axi_gpio_0_0.xci",
-        "inst_hier_path": "axi_gpio_0"
       }
     },
     "interface_nets": {
       "axi_smc_M00_AXI": {
         "interface_ports": [
-          "axi_smc/M00_AXI",
-          "axi_dma_0/S_AXI_LITE"
+          "axi_gpio_0/S_AXI",
+          "axi_smc/M00_AXI"
         ]
       },
       "processing_system7_0_DDR": {
@@ -1487,16 +1449,28 @@
       }
     },
     "nets": {
-      "custom_I2C_core_0_out": {
+      "Mic_Clock_1": {
         "ports": [
-          "custom_I2C_core_0/out",
-          "custom_DSP_core_0/in"
+          "Mic_Clock",
+          "PDM_0/CLK"
         ]
       },
-      "microphone_1": {
+      "Mic_Data_1": {
         "ports": [
-          "microphone",
-          "custom_I2C_core_0/in"
+          "Mic_Data",
+          "PDM_0/DATA"
+        ]
+      },
+      "PDM_0_AUDIO": {
+        "ports": [
+          "PDM_0/AUDIO",
+          "custom_DSP_core_0/DATA"
+        ]
+      },
+      "custom_DSP_core_0_SIGNAL": {
+        "ports": [
+          "custom_DSP_core_0/SIGNAL",
+          "axi_gpio_0/gpio_io_i"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -1504,29 +1478,15 @@
           "processing_system7_0/FCLK_CLK0",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "axi_smc/aclk",
-          "axi_dma_0/s_axi_lite_aclk"
+          "axi_gpio_0/s_axi_aclk"
         ]
       },
-      "rst_ps7_0_50M_peripheral_aresetn": {
+      "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
-          "axi_dma_0/axi_resetn",
-          "axi_smc/aresetn"
+          "processing_system7_0/FCLK_RESET0_N",
+          "axi_smc/aresetn",
+          "axi_gpio_0/s_axi_aresetn"
         ]
-      }
-    },
-    "addressing": {
-      "/processing_system7_0": {
-        "address_spaces": {
-          "Data": {
-            "segments": {
-              "SEG_axi_dma_0_Reg": {
-                "address_block": "/axi_dma_0/S_AXI_LITE/Reg",
-                "offset": "0x40400000",
-                "range": "64K"
-              }
-            }
-          }
-        }
       }
     }
   }

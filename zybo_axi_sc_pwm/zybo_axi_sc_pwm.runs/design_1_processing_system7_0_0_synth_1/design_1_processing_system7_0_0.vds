@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri Feb 20 21:37:55 2026
-# Process ID         : 3244
+# Start of session at: Mon Mar  2 21:41:43 2026
+# Process ID         : 8480
 # Current directory  : C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.runs/design_1_processing_system7_0_0_synth_1
 # Command line       : vivado.exe -log design_1_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processing_system7_0_0.tcl
 # Log file           : C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.vds
@@ -17,12 +17,15 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 4
 # Host memory        : 6435 MB
-# Swap memory        : 3489 MB
-# Total Virtual      : 9925 MB
-# Available Virtual  : 3896 MB
+# Swap memory        : 1207 MB
+# Total Virtual      : 7643 MB
+# Available Virtual  : 1612 MB
 #-----------------------------------------------------------
 source design_1_processing_system7_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_2x8_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_12ch_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_16_channel_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_gen_1_0'.
@@ -36,9 +39,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6800
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 1792
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1106.781 ; gain = 465.867
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1108.918 ; gain = 469.039
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
@@ -49,20 +53,20 @@ INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [C:/Xilinx/Vivado/20
 INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:123980]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:123980]
 INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:335]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:340]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:53]
 WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -144,18 +148,18 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1225.074 ; gain = 584.160
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1226.703 ; gain = 586.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1225.074 ; gain = 584.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1226.703 ; gain = 586.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1225.074 ; gain = 584.160
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1226.703 ; gain = 586.824
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1225.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1226.703 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -168,31 +172,31 @@ Parsing XDC File [C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_
 Finished Parsing XDC File [C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.runs/design_1_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1228.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1281.242 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1232.922 ; gain = 4.180
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1281.242 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1232.922 ; gain = 592.008
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1281.242 ; gain = 641.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1232.922 ; gain = 592.008
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1281.242 ; gain = 641.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.runs/design_1_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1232.922 ; gain = 592.008
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1281.242 ; gain = 641.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1232.922 ; gain = 592.008
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1281.242 ; gain = 641.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -237,25 +241,25 @@ WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5
 WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1256.570 ; gain = 615.656
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1281.574 ; gain = 641.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1573.129 ; gain = 932.215
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 1579.645 ; gain = 939.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1593.633 ; gain = 952.719
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 1600.125 ; gain = 960.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1596.156 ; gain = 955.242
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 1602.910 ; gain = 963.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -273,37 +277,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -320,30 +324,30 @@ Report Cell Usage:
 |      |Cell  |Count |
 +------+------+------+
 |1     |BIBUF |   130|
-|2     |BUFG  |     2|
-|3     |LUT1  |    24|
+|2     |BUFG  |     1|
+|3     |LUT1  |    28|
 |4     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1812.016 ; gain = 1163.254
-Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 1812.016 ; gain = 1171.102
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:07 . Memory (MB): peak = 1818.625 ; gain = 1124.207
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:14 . Memory (MB): peak = 1818.625 ; gain = 1178.746
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1812.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1818.625 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1821.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 48055e0e
+Synth Design complete | Checksum: 2cc021e8
 INFO: [Common 17-83] Releasing license: Synthesis
-30 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+31 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 1812.016 ; gain = 1409.590
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1812.016 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:27 . Memory (MB): peak = 1821.590 ; gain = 1420.777
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1821.590 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_processing_system7_0_0_utilization_synth.rpt -pb design_1_processing_system7_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 20 21:39:29 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  2 21:43:26 2026...

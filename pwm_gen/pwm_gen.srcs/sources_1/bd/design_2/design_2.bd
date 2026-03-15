@@ -1,0 +1,340 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x25833C7E526D01A",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../pwm_gen.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "increment_pwm_us_0": "",
+      "pwm_gen_0": "",
+      "util_vector_logic_0": ""
+    },
+    "ports": {
+      "btn0": {
+        "direction": "I",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "btn1": {
+        "direction": "I",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "btn2": {
+        "direction": "I"
+      },
+      "je0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "led0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "sw0": {
+        "direction": "I"
+      },
+      "sysclk": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "15",
+        "xci_name": "design_2_clk_wiz_0_0",
+        "xci_path": "ip\\design_2_clk_wiz_0_0\\design_2_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "80.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "143.688"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "96.948"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "CLK_IN2_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "8.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "125.000"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "RESET_PORT": {
+            "value": "reset"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_HIGH"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "increment_pwm_us_0": {
+        "vlnv": "xilinx.com:module_ref:increment_pwm_us:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_increment_pwm_us_0_0",
+        "xci_path": "ip\\design_2_increment_pwm_us_0_0\\design_2_increment_pwm_us_0_0.xci",
+        "inst_hier_path": "increment_pwm_us_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "increment_pwm_us",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sub": {
+            "direction": "I"
+          },
+          "pwm_us": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "pwm_gen_0": {
+        "vlnv": "xilinx.com:module_ref:pwm_gen:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_pwm_gen_0_0",
+        "xci_path": "ip\\design_2_pwm_gen_0_0\\design_2_pwm_gen_0_0.xci",
+        "inst_hier_path": "pwm_gen_0",
+        "parameters": {
+          "C_CLK_HZ": {
+            "value": "50000000"
+          },
+          "C_PULSE_MODE": {
+            "value": "false"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pwm_gen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "pl_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "pulse_us": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "pwm_sig": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "design_2_util_vector_logic_0_0",
+        "xci_path": "ip\\design_2_util_vector_logic_0_0\\design_2_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "btn0_1": {
+        "ports": [
+          "btn0",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "btn1_1": {
+        "ports": [
+          "btn1",
+          "increment_pwm_us_0/add"
+        ]
+      },
+      "btn2_1": {
+        "ports": [
+          "btn2",
+          "increment_pwm_us_0/sub"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "pwm_gen_0/pl_clk",
+          "increment_pwm_us_0/clk"
+        ]
+      },
+      "increment_pwm_us_0_pwm_us": {
+        "ports": [
+          "increment_pwm_us_0/pwm_us",
+          "pwm_gen_0/pulse_us"
+        ]
+      },
+      "sw0_1": {
+        "ports": [
+          "sw0",
+          "pwm_gen_0/en"
+        ]
+      },
+      "sysclk_1": {
+        "ports": [
+          "sysclk",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "pwm_gen_0/rst_n"
+        ]
+      },
+      "util_vector_logic_8_Res": {
+        "ports": [
+          "pwm_gen_0/pwm_sig",
+          "je0",
+          "led0"
+        ]
+      }
+    }
+  }
+}

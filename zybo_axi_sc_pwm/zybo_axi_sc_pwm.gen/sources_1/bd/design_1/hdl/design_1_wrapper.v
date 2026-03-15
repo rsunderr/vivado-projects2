@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Fri Feb 20 21:36:53 2026
+//Date        : Tue Mar  3 18:55:30 2026
 //Host        : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -32,6 +32,10 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    jc_in,
+    jc_out,
+    jc_rst,
+    jd,
     je);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -54,7 +58,11 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output je;
+  input [2:0]jc_in;
+  output [3:0]jc_out;
+  input jc_rst;
+  output [7:0]jd;
+  output [7:0]je;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -77,7 +85,11 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire je;
+  wire [2:0]jc_in;
+  wire [3:0]jc_out;
+  wire jc_rst;
+  wire [7:0]jd;
+  wire [7:0]je;
 
   design_1 design_1_i
        (.DDR_addr(DDR_addr),
@@ -101,5 +113,9 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .jc_in(jc_in),
+        .jc_out(jc_out),
+        .jc_rst(jc_rst),
+        .jd(jd),
         .je(je));
 endmodule

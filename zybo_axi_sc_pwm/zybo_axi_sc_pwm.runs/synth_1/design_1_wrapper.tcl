@@ -57,8 +57,11 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
-set_param xicom.use_bs_reader 1
+set_param bd.open.in_stealth_mode 1
 set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -72,6 +75,7 @@ set_property XPM_LIBRARIES {XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
+  c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_2x8_1_0
   c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_12ch_1_0
   c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_16_channel_1_0
   c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_gen_1_0

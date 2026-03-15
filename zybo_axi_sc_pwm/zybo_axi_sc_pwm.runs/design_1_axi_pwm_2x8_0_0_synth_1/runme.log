@@ -1,0 +1,633 @@
+
+*** Running vivado
+    with args -log design_1_axi_pwm_2x8_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_pwm_2x8_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Mar  3 18:53:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axi_pwm_2x8_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_2x8_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_12ch_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_16_channel_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_gen_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_pwm_2x8_0_0
+Command: synth_design -top design_1_axi_pwm_2x8_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 10556
+
+*** Running vivado
+    with args -log design_1_axi_pwm_2x8_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_pwm_2x8_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Mar  3 18:56:37 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axi_pwm_2x8_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_2x8_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_12ch_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_16_channel_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryansundermeyer/vivado-projects/ip_repo/axi_pwm_gen_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_pwm_2x8_0_0
+Command: synth_design -top design_1_axi_pwm_2x8_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 6168
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1101.355 ; gain = 468.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_pwm_2x8_0_0' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_axi_pwm_2x8_0_0/synth/design_1_axi_pwm_2x8_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_pwm_2x8' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/hdl/axi_pwm_2x8.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pwm' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/src/pwm.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'pwm' (0#1) [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/src/pwm.v:22]
+INFO: [Synth 8-6157] synthesizing module 'axi_pwm_2x8_slave_lite_v1_0_S00_AXI' [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/hdl/axi_pwm_2x8_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/hdl/axi_pwm_2x8_slave_lite_v1_0_S00_AXI.v:174]
+INFO: [Synth 8-226] default block is never used [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/hdl/axi_pwm_2x8_slave_lite_v1_0_S00_AXI.v:263]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/hdl/axi_pwm_2x8_slave_lite_v1_0_S00_AXI.v:412]
+INFO: [Synth 8-6155] done synthesizing module 'axi_pwm_2x8_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/hdl/axi_pwm_2x8_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'axi_pwm_2x8' (0#1) [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ipshared/a106/hdl/axi_pwm_2x8.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_pwm_2x8_0_0' (0#1) [c:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.gen/sources_1/bd/design_1/ip/design_1_axi_pwm_2x8_0_0/synth/design_1_axi_pwm_2x8_0_0.v:53]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1224.359 ; gain = 591.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1224.359 ; gain = 591.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1224.359 ; gain = 591.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1224.359 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1348.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 1348.777 ; gain = 0.289
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1348.777 ; gain = 715.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1348.777 ; gain = 715.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1348.777 ; gain = 715.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'axi_pwm_2x8_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'axi_pwm_2x8_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'axi_pwm_2x8_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'axi_pwm_2x8_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1348.777 ; gain = 715.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Multipliers : 
+	              27x32  Multipliers := 16    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 16    
+	  16 Input   32 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (A:0x1e100)*B.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (A:0x1e100)*B.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x6100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: A*(B:0x1e100).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: Generating DSP PULSEWIDTH0, operation Mode is: (PCIN>>17)+A*(B:0x2fa).
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+DSP Report: operator PULSEWIDTH0 is absorbed into DSP PULSEWIDTH0.
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module axi_pwm_2x8_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PULSEWIDTH_US[31] in module pwm is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 1349.789 ; gain = 716.688
+---------------------------------------------------------------------------------
+ Sort Area is  PULSEWIDTH0_0 : 0 0 : 1044 3044 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_0 : 0 1 : 2000 3044 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_3 : 0 0 : 1042 2964 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_3 : 0 1 : 1922 2964 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_10 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_10 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_12 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_12 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_14 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_14 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_16 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_16 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_18 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_18 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1a : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1a : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1c : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1c : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1e : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1e : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_20 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_20 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_22 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_22 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_24 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_24 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_6 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_6 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_9 : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_9 : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_c : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_c : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_e : 0 0 : 1044 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_e : 0 1 : 690 1734 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_8 : 0 0 : 1042 1042 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_11 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_13 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_15 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_17 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_19 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1b : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1d : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_1f : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_21 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_23 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_25 : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_a : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_d : 0 0 : 361 361 : Used 1 time 0
+ Sort Area is  PULSEWIDTH0_f : 0 0 : 361 361 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pwm         | (A:0x1e100)*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*B         | 16     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*B         | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (A:0x1e100)*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x6100)           | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*(B:0x1e100)          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | (PCIN>>17)+A*(B:0x2fa) | 15     | 11     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:48 . Memory (MB): peak = 1508.602 ; gain = 875.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:49 . Memory (MB): peak = 1515.055 ; gain = 881.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 1572.809 ; gain = 939.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:02:02 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:02:02 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:02:03 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:51 ; elapsed = 00:02:03 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pwm         | PCIN>>17+A*B | 15     | 10     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   720|
+|2     |DSP48E1 |    48|
+|3     |LUT1    |    17|
+|4     |LUT2    |   977|
+|5     |LUT3    |  1221|
+|6     |LUT4    |   913|
+|7     |LUT5    |   324|
+|8     |LUT6    |   565|
+|9     |MUXF7   |    64|
+|10    |MUXF8   |    32|
+|11    |FDRE    |  1001|
+|12    |FDSE    |    56|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:51 ; elapsed = 00:02:03 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:31 ; elapsed = 00:01:58 . Memory (MB): peak = 1730.133 ; gain = 972.613
+Synthesis Optimization Complete : Time (s): cpu = 00:01:51 ; elapsed = 00:02:03 . Memory (MB): peak = 1730.133 ; gain = 1097.031
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1739.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 864 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1743.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a2c596e1
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:04 ; elapsed = 00:02:22 . Memory (MB): peak = 1743.246 ; gain = 1342.797
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1743.246 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.runs/design_1_axi_pwm_2x8_0_0_synth_1/design_1_axi_pwm_2x8_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_pwm_2x8_0_0, cache-ID = 9cb048301796c80e
+INFO: [Coretcl 2-1174] Renamed 18 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1743.246 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ryansundermeyer/vivado-projects/zybo_axi_sc_pwm/zybo_axi_sc_pwm.runs/design_1_axi_pwm_2x8_0_0_synth_1/design_1_axi_pwm_2x8_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_axi_pwm_2x8_0_0_utilization_synth.rpt -pb design_1_axi_pwm_2x8_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  3 18:59:14 2026...
