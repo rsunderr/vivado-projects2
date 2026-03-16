@@ -1,32 +1,38 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"2.0",
-   "Default View_TopLeft":"-136,-93",
+   "Default View_ScaleFactor":"1.97378",
+   "Default View_TopLeft":"-100,4",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 threadsafe
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port port-id_btn0 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
-preplace port port-id_btn1 -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
-preplace port port-id_btn2 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
-preplace port port-id_sw0 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
-preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
-preplace portBus je0 -pg 1 -lvl 4 -x 770 -y 60 -defaultsOSRD
-preplace portBus led0 -pg 1 -lvl 4 -x 770 -y 90 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 200 -defaultsOSRD
-preplace inst increment_pwm_us_0 -pg 1 -lvl 2 -x 340 -y 260 -defaultsOSRD
-preplace inst pwm_gen_0 -pg 1 -lvl 3 -x 620 -y 90 -defaultsOSRD
-preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 340 -y 80 -defaultsOSRD
-preplace netloc btn0_1 1 0 2 NJ 80 NJ
-preplace netloc btn1_1 1 0 2 20J 260 NJ
-preplace netloc btn2_1 1 0 2 NJ 280 NJ
-preplace netloc clk_wiz_0_clk_out1 1 1 2 200 20 480J
-preplace netloc increment_pwm_us_0_pwm_us 1 2 1 490 120n
-preplace netloc sw0_1 1 0 3 NJ 140 NJ 140 480J
-preplace netloc sysclk_1 1 0 1 NJ 200
-preplace netloc util_vector_logic_0_Res 1 2 1 NJ 80
-preplace netloc util_vector_logic_8_Res 1 3 1 750 60n
-levelinfo -pg 1 0 110 340 620 770
-pagesize -pg 1 -db -bbox -sgen -90 0 880 340
+preplace port port-id_btn0 -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace port port-id_btn1 -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace port port-id_btn2 -pg 1 -lvl 0 -x -10 -y 250 -defaultsOSRD
+preplace port port-id_sw0 -pg 1 -lvl 0 -x -10 -y 460 -defaultsOSRD
+preplace port port-id_sysclk -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace port port-id_sw1 -pg 1 -lvl 0 -x -10 -y 300 -defaultsOSRD
+preplace port port-id_je1 -pg 1 -lvl 4 -x 860 -y 260 -defaultsOSRD
+preplace port port-id_led1 -pg 1 -lvl 4 -x 860 -y 290 -defaultsOSRD
+preplace portBus je0 -pg 1 -lvl 4 -x 860 -y 420 -defaultsOSRD
+preplace portBus led0 -pg 1 -lvl 4 -x 860 -y 450 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 160 -y 60 -defaultsOSRD
+preplace inst increment_pwm_us_0 -pg 1 -lvl 2 -x 440 -y 210 -defaultsOSRD
+preplace inst pwm_gen_0 -pg 1 -lvl 3 -x 710 -y 450 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 160 -y 160 -defaultsOSRD
+preplace inst pwm_gen_1 -pg 1 -lvl 3 -x 710 -y 290 -defaultsOSRD
+preplace netloc btn0_1 1 0 1 NJ 160
+preplace netloc btn1_1 1 0 2 NJ 220 NJ
+preplace netloc btn2_1 1 0 2 NJ 250 300J
+preplace netloc clk_wiz_0_clk_out1 1 1 2 310 110 580
+preplace netloc increment_pwm_us_0_pwm_us 1 2 1 560 210n
+preplace netloc pwm_gen_1_pwm_sig 1 3 1 840 260n
+preplace netloc sw0_1 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc sw1_1 1 0 3 NJ 300 NJ 300 NJ
+preplace netloc sysclk_1 1 0 1 NJ 60
+preplace netloc util_vector_logic_0_Res 1 1 2 320 120 570
+preplace netloc util_vector_logic_8_Res 1 3 1 840 420n
+levelinfo -pg 1 -10 160 440 710 860
+pagesize -pg 1 -db -bbox -sgen -110 0 980 540
 "
 }
-
+0

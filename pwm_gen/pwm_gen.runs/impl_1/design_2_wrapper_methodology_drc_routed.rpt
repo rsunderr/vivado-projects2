@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun Mar 15 16:16:00 2026
+| Date         : Sun Mar 15 23:19:18 2026
 | Host         : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_2_wrapper_methodology_drc_routed.rpt -pb design_2_wrapper_methodology_drc_routed.pb -rpx design_2_wrapper_methodology_drc_routed.rpx
 | Design       : design_2_wrapper
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 53
+             Checks found: 104
 +-----------+------------------+------------------------------------------------------------------+--------+
 | Rule      | Severity         | Description                                                      | Checks |
 +-----------+------------------+------------------------------------------------------------------+--------+
 | TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 2      |
-| DPIR-1    | Warning          | Asynchronous driver check                                        | 49     |
+| DPIR-1    | Warning          | Asynchronous driver check                                        | 98     |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 2      |
 | TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 2      |
 +-----------+------------------+------------------------------------------------------------------+--------+
 
@@ -287,6 +288,289 @@ Related violations: <none>
 DPIR-1#49 Warning
 Asynchronous driver check  
 DSP design_2_i/pwm_gen_0/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_0/U0/clk_cnt_max0__1/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#53 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#54 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#55 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#56 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#57 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#58 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#59 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#60 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#61 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#62 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#63 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#64 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#65 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#66 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#67 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#68 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#69 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#70 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#71 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#72 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#73 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#74 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#75 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#76 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#77 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#78 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#79 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#80 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#81 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#82 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#83 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__0 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#84 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#85 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#86 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#87 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#88 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#89 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#90 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#91 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#92 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#93 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#94 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#95 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#96 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#97 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#98 Warning
+Asynchronous driver check  
+DSP design_2_i/pwm_gen_1/U0/clk_cnt_max0__1 input pin design_2_i/pwm_gen_1/U0/clk_cnt_max0__1/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_2_i/pwm_gen_0/U0/pwm_sig_buf_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[28]/CLR,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[29]/CLR,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[2]/PRE,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[30]/CLR,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[31]/CLR,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[3]/PRE,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[4]/PRE,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[5]/CLR,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[6]/PRE,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[7]/PRE,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[8]/PRE,
+design_2_i/pwm_gen_0/U0/pulse_us_buf1_reg[9]/CLR,
+design_2_i/pwm_gen_0/U0/pwm_sig_buf_reg/CLR,
+design_2_i/pwm_gen_0/U0/pwm_sig_buf_reg_lopt_replica/CLR,
+design_2_i/pwm_gen_0/U0/rst_mode_reg/PRE (the first 15 of 131 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell design_2_i/pwm_gen_1/U0/pwm_sig_buf_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[27]/CLR,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[28]/CLR,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[29]/CLR,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[2]/PRE,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[30]/CLR,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[31]/CLR,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[3]/PRE,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[4]/PRE,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[5]/CLR,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[6]/PRE,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[7]/PRE,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[8]/PRE,
+design_2_i/pwm_gen_1/U0/pulse_us_buf1_reg[9]/CLR,
+design_2_i/pwm_gen_1/U0/pwm_sig_buf_reg/CLR,
+design_2_i/pwm_gen_1/U0/rst_mode_reg/PRE (the first 15 of 130 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-56#1 Warning

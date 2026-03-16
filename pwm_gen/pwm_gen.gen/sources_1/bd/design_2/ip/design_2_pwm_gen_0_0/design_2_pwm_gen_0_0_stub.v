@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun Mar 15 16:10:53 2026
+// Date        : Sun Mar 15 18:12:01 2026
 // Host        : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/ip/design_2_pwm_gen_0_0/design_2_pwm_gen_0_0_stub.v
@@ -14,7 +14,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* CHECK_LICENSE_TYPE = "design_2_pwm_gen_0_0,pwm_gen,{}" *) (* core_generation_info = "design_2_pwm_gen_0_0,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=50000000,C_BITWIDTH=32,C_PULSE_MODE=false,C_RST_PW_US=0}" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* CHECK_LICENSE_TYPE = "design_2_pwm_gen_0_0,pwm_gen,{}" *) (* core_generation_info = "design_2_pwm_gen_0_0,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=50000000,C_BITWIDTH=32,C_PULSE_MODE=true,C_RST_PW_US=1500}" *) (* downgradeipidentifiedwarnings = "yes" *) 
 (* ip_definition_source = "module_ref" *) (* x_core_info = "pwm_gen,Vivado 2024.2" *) 
 module design_2_pwm_gen_0_0(pl_clk, rst_n, en, pulse_us, pwm_sig)
 /* synthesis syn_black_box black_box_pad_pin="rst_n,en,pulse_us[31:0],pwm_sig" */

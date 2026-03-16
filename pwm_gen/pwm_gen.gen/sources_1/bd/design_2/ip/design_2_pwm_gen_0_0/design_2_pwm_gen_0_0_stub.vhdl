@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Sun Mar 15 16:10:53 2026
+-- Date        : Sun Mar 15 18:12:01 2026
 -- Host        : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/ip/design_2_pwm_gen_0_0/design_2_pwm_gen_0_0_stub.vhdl
@@ -25,7 +25,7 @@ entity design_2_pwm_gen_0_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of design_2_pwm_gen_0_0 : entity is "design_2_pwm_gen_0_0,pwm_gen,{}";
   attribute core_generation_info : string;
-  attribute core_generation_info of design_2_pwm_gen_0_0 : entity is "design_2_pwm_gen_0_0,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=50000000,C_BITWIDTH=32,C_PULSE_MODE=false,C_RST_PW_US=0}";
+  attribute core_generation_info of design_2_pwm_gen_0_0 : entity is "design_2_pwm_gen_0_0,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=50000000,C_BITWIDTH=32,C_PULSE_MODE=true,C_RST_PW_US=1500}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_2_pwm_gen_0_0 : entity is "yes";
   attribute ip_definition_source : string;

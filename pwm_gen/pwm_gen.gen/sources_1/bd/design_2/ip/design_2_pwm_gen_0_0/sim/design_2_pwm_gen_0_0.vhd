@@ -95,8 +95,8 @@ BEGIN
     GENERIC MAP (
       C_CLK_HZ => 50000000,
       C_BITWIDTH => 32,
-      C_PULSE_MODE => false,
-      C_RST_PW_US => 0
+      C_PULSE_MODE => true,
+      C_RST_PW_US => 1500
     )
     PORT MAP (
       pl_clk => pl_clk,

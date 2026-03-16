@@ -12,7 +12,10 @@ module design_2 (
   je0,
   led0,
   sw0,
-  sysclk
+  sysclk,
+  sw1,
+  je1,
+  led1
 );
 
   (* X_INTERFACE_IGNORE = "true" *)
@@ -29,6 +32,12 @@ module design_2 (
   input sw0;
   (* X_INTERFACE_IGNORE = "true" *)
   input sysclk;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input sw1;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output je1;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output led1;
 
   // stub module has no contents
 

@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Sun Mar 15 16:06:21 2026
+--Date        : Sun Mar 15 23:09:18 2026
 --Host        : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
 --Command     : generate_target design_2_wrapper.bd
 --Design      : design_2_wrapper
@@ -18,8 +18,11 @@ entity design_2_wrapper is
     btn1 : in STD_LOGIC;
     btn2 : in STD_LOGIC;
     je0 : out STD_LOGIC_VECTOR ( 0 to 0 );
+    je1 : out STD_LOGIC;
     led0 : out STD_LOGIC_VECTOR ( 0 to 0 );
+    led1 : out STD_LOGIC;
     sw0 : in STD_LOGIC;
+    sw1 : in STD_LOGIC;
     sysclk : in STD_LOGIC
   );
 end design_2_wrapper;
@@ -33,7 +36,10 @@ architecture STRUCTURE of design_2_wrapper is
     je0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     led0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     sw0 : in STD_LOGIC;
-    sysclk : in STD_LOGIC
+    sysclk : in STD_LOGIC;
+    sw1 : in STD_LOGIC;
+    je1 : out STD_LOGIC;
+    led1 : out STD_LOGIC
   );
   end component design_2;
 begin
@@ -43,8 +49,11 @@ design_2_i: component design_2
       btn1 => btn1,
       btn2 => btn2,
       je0(0) => je0(0),
+      je1 => je1,
       led0(0) => led0(0),
+      led1 => led1,
       sw0 => sw0,
+      sw1 => sw1,
       sysclk => sysclk
     );
 end STRUCTURE;

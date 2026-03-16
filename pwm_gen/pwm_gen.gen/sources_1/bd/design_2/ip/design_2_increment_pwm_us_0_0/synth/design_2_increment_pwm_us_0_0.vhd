@@ -56,6 +56,7 @@ USE ieee.numeric_std.ALL;
 ENTITY design_2_increment_pwm_us_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
+    rst_n : IN STD_LOGIC;
     add : IN STD_LOGIC;
     sub : IN STD_LOGIC;
     pwm_us : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
@@ -68,6 +69,7 @@ ARCHITECTURE design_2_increment_pwm_us_0_0_arch OF design_2_increment_pwm_us_0_0
   COMPONENT increment_pwm_us IS
     PORT (
       clk : IN STD_LOGIC;
+      rst_n : IN STD_LOGIC;
       add : IN STD_LOGIC;
       sub : IN STD_LOGIC;
       pwm_us : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
@@ -87,10 +89,14 @@ ARCHITECTURE design_2_increment_pwm_us_0_0_arch OF design_2_increment_pwm_us_0_0
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF clk: SIGNAL IS "slave clk";
   ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF rst_n: SIGNAL IS "xilinx.com:signal:reset:1.0 rst_n RST";
+  ATTRIBUTE X_INTERFACE_MODE OF rst_n: SIGNAL IS "slave rst_n";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF rst_n: SIGNAL IS "XIL_INTERFACENAME rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 BEGIN
   U0 : increment_pwm_us
     PORT MAP (
       clk => clk,
+      rst_n => rst_n,
       add => add,
       sub => sub,
       pwm_us => pwm_us

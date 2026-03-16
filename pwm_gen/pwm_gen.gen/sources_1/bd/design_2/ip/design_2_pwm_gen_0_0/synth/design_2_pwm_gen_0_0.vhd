@@ -86,7 +86,7 @@ ARCHITECTURE design_2_pwm_gen_0_0_arch OF design_2_pwm_gen_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_2_pwm_gen_0_0_arch : ARCHITECTURE IS "design_2_pwm_gen_0_0,pwm_gen,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_2_pwm_gen_0_0_arch: ARCHITECTURE IS "design_2_pwm_gen_0_0,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=50000000,C_BITWIDTH=32,C_PULSE_MODE=false,C_RST_PW_US=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_2_pwm_gen_0_0_arch: ARCHITECTURE IS "design_2_pwm_gen_0_0,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=50000000,C_BITWIDTH=32,C_PULSE_MODE=true,C_RST_PW_US=1500}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_2_pwm_gen_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -103,8 +103,8 @@ BEGIN
     GENERIC MAP (
       C_CLK_HZ => 50000000,
       C_BITWIDTH => 32,
-      C_PULSE_MODE => false,
-      C_RST_PW_US => 0
+      C_PULSE_MODE => true,
+      C_RST_PW_US => 1500
     )
     PORT MAP (
       pl_clk => pl_clk,

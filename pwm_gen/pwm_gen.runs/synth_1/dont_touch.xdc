@@ -18,4 +18,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_pw
 # IP: bd/design_2/ip/design_2_util_vector_logic_0_0/design_2_util_vector_logic_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_util_vector_logic_0_0 || ORIG_REF_NAME==design_2_util_vector_logic_0_0} -quiet] -quiet
 
+# IP: bd/design_2/ip/design_2_pwm_gen_0_1/design_2_pwm_gen_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_pwm_gen_0_1 || ORIG_REF_NAME==design_2_pwm_gen_0_1} -quiet] -quiet
+
 # XDC: c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/design_2_ooc.xdc

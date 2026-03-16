@@ -25,6 +25,7 @@ use ieee.numeric_std.all;
 entity increment_pwm_us is
     port (
         clk    : in  std_logic;
+        rst_n  : in  std_logic;
         add    : in  std_logic;
         sub    : in  std_logic;
         pwm_us : out std_logic_vector(31 downto 0)
@@ -32,7 +33,7 @@ entity increment_pwm_us is
 end increment_pwm_us;
 
 architecture rtl of increment_pwm_us is
-    signal pwm_us_i : unsigned(31 downto 0) := (others => '0');
+    signal pwm_us_i : unsigned(31 downto 0) := to_unsigned(1500, 32);
 
     signal add_sync_0, add_sync_1, add_prev : std_logic := '0';
     signal sub_sync_0, sub_sync_1, sub_prev : std_logic := '0';
@@ -40,7 +41,10 @@ begin
 
     process(clk)
     begin
-        if rising_edge(clk) then
+        if rst_n = '0' then
+            pwm_us_i <= to_unsigned(1500, 32);
+            
+        elsif rising_edge(clk) then
             add_sync_0 <= add;
             add_sync_1 <= add_sync_0;
             add_prev   <= add_sync_1;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1773616024">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1773641577">
   <File Type="PA-TCL" Name="design_2_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="design_2_wrapper_reports.tcl"/>
   <File Type="INIT-TIMING" Name="design_2_wrapper_timing_summary_init.rpt"/>
@@ -52,12 +52,12 @@
   <File Type="ROUTE-RQS-PB" Name="design_2_wrapper_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="design_2_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="design_2_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pwm_gen_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pwm_gen_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pwm_gen_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="pwm_gen_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="pwm_gen_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="pwm_gen_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="design_2_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="design_2_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="design_2_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="design_2_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="design_2_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="design_2_wrapper_bus_skew_postroute_physopted.rpx"/>
   <File Type="BG-BIT" Name="design_2_wrapper.bit"/>
   <File Type="BG-BIN" Name="design_2_wrapper.bin"/>
   <File Type="BITSTR-MSK" Name="design_2_wrapper.msk"/>
@@ -171,7 +171,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_2_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_increment_pwm_us_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_pwm_gen_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_pwm_gen_0_0"/>
 </GenRun>

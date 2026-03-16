@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun Mar 15 16:08:59 2026
+// Date        : Sun Mar 15 23:14:35 2026
 // Host        : RYANSUNDERMA8F8 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/ip/design_2_increment_pwm_us_0_0/design_2_increment_pwm_us_0_0_sim_netlist.v
@@ -18,10 +18,12 @@
 (* NotValidForBitStream *)
 module design_2_increment_pwm_us_0_0
    (clk,
+    rst_n,
     add,
     sub,
     pwm_us);
   (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_mode = "slave clk" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 rst_n RST" *) (* x_interface_mode = "slave rst_n" *) (* x_interface_parameter = "XIL_INTERFACENAME rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst_n;
   input add;
   input sub;
   output [31:0]pwm_us;
@@ -29,22 +31,26 @@ module design_2_increment_pwm_us_0_0
   wire add;
   wire clk;
   wire [31:0]pwm_us;
+  wire rst_n;
   wire sub;
 
   design_2_increment_pwm_us_0_0_increment_pwm_us U0
        (.add(add),
         .clk(clk),
         .pwm_us(pwm_us),
+        .rst_n(rst_n),
         .sub(sub));
 endmodule
 
 (* ORIG_REF_NAME = "increment_pwm_us" *) 
 module design_2_increment_pwm_us_0_0_increment_pwm_us
    (pwm_us,
+    rst_n,
     add,
     clk,
     sub);
   output [31:0]pwm_us;
+  input rst_n;
   input add;
   input clk;
   input sub;
@@ -53,6 +59,7 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
   wire add_prev;
   wire add_sync_0;
   wire add_sync_1;
+  wire clear;
   wire clk;
   wire [31:0]pwm_us;
   wire \pwm_us_i[11]_i_2_n_0 ;
@@ -81,8 +88,8 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
   wire \pwm_us_i[31]_i_13_n_0 ;
   wire \pwm_us_i[31]_i_14_n_0 ;
   wire \pwm_us_i[31]_i_15_n_0 ;
+  wire \pwm_us_i[31]_i_16_n_0 ;
   wire \pwm_us_i[31]_i_1_n_0 ;
-  wire \pwm_us_i[31]_i_3_n_0 ;
   wire \pwm_us_i[31]_i_4_n_0 ;
   wire \pwm_us_i[31]_i_5_n_0 ;
   wire \pwm_us_i[31]_i_6_n_0 ;
@@ -162,6 +169,7 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
   wire \pwm_us_i_reg[7]_i_1_n_5 ;
   wire \pwm_us_i_reg[7]_i_1_n_6 ;
   wire \pwm_us_i_reg[7]_i_1_n_7 ;
+  wire rst_n;
   wire sub;
   wire sub_prev;
   wire sub_sync_0;
@@ -172,7 +180,7 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
     .INIT(1'b0)) 
     add_prev_reg
        (.C(clk),
-        .CE(1'b1),
+        .CE(rst_n),
         .D(add_sync_1),
         .Q(add_prev),
         .R(1'b0));
@@ -180,7 +188,7 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
     .INIT(1'b0)) 
     add_sync_0_reg
        (.C(clk),
-        .CE(1'b1),
+        .CE(rst_n),
         .D(add),
         .Q(add_sync_0),
         .R(1'b0));
@@ -188,7 +196,7 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
     .INIT(1'b0)) 
     add_sync_1_reg
        (.C(clk),
-        .CE(1'b1),
+        .CE(rst_n),
         .D(add_sync_0),
         .Q(add_sync_1),
         .R(1'b0));
@@ -335,115 +343,120 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
   LUT6 #(
     .INIT(64'hFFFFFFFF0000FE00)) 
     \pwm_us_i[31]_i_1 
-       (.I0(\pwm_us_i[31]_i_3_n_0 ),
-        .I1(\pwm_us_i[31]_i_4_n_0 ),
-        .I2(\pwm_us_i[31]_i_5_n_0 ),
+       (.I0(\pwm_us_i[31]_i_4_n_0 ),
+        .I1(\pwm_us_i[31]_i_5_n_0 ),
+        .I2(\pwm_us_i[31]_i_6_n_0 ),
         .I3(sub_sync_1),
         .I4(sub_prev),
-        .I5(\pwm_us_i[31]_i_6_n_0 ),
+        .I5(\pwm_us_i[31]_i_7_n_0 ),
         .O(\pwm_us_i[31]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'h4B)) 
     \pwm_us_i[31]_i_10 
        (.I0(add_prev),
         .I1(add_sync_1),
-        .I2(pwm_us[28]),
+        .I2(pwm_us[29]),
         .O(\pwm_us_i[31]_i_10_n_0 ));
+  LUT3 #(
+    .INIT(8'h4B)) 
+    \pwm_us_i[31]_i_11 
+       (.I0(add_prev),
+        .I1(add_sync_1),
+        .I2(pwm_us[28]),
+        .O(\pwm_us_i[31]_i_11_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \pwm_us_i[31]_i_11 
+    \pwm_us_i[31]_i_12 
        (.I0(pwm_us[19]),
         .I1(pwm_us[20]),
         .I2(pwm_us[21]),
         .I3(pwm_us[22]),
         .I4(pwm_us[0]),
         .I5(pwm_us[31]),
-        .O(\pwm_us_i[31]_i_11_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \pwm_us_i[31]_i_12 
-       (.I0(pwm_us[8]),
-        .I1(pwm_us[7]),
-        .I2(pwm_us[6]),
-        .I3(pwm_us[5]),
         .O(\pwm_us_i[31]_i_12_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \pwm_us_i[31]_i_13 
-       (.I0(pwm_us[4]),
-        .I1(pwm_us[3]),
-        .I2(pwm_us[2]),
-        .I3(pwm_us[1]),
+       (.I0(pwm_us[8]),
+        .I1(pwm_us[7]),
+        .I2(pwm_us[6]),
+        .I3(pwm_us[5]),
         .O(\pwm_us_i[31]_i_13_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \pwm_us_i[31]_i_14 
-       (.I0(pwm_us[16]),
-        .I1(pwm_us[15]),
-        .I2(pwm_us[14]),
-        .I3(pwm_us[13]),
+       (.I0(pwm_us[4]),
+        .I1(pwm_us[3]),
+        .I2(pwm_us[2]),
+        .I3(pwm_us[1]),
         .O(\pwm_us_i[31]_i_14_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \pwm_us_i[31]_i_15 
+       (.I0(pwm_us[16]),
+        .I1(pwm_us[15]),
+        .I2(pwm_us[14]),
+        .I3(pwm_us[13]),
+        .O(\pwm_us_i[31]_i_15_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \pwm_us_i[31]_i_16 
        (.I0(pwm_us[12]),
         .I1(pwm_us[11]),
         .I2(pwm_us[10]),
         .I3(pwm_us[9]),
-        .O(\pwm_us_i[31]_i_15_n_0 ));
+        .O(\pwm_us_i[31]_i_16_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \pwm_us_i[31]_i_3 
+       (.I0(rst_n),
+        .O(clear));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
-    \pwm_us_i[31]_i_3 
-       (.I0(\pwm_us_i[31]_i_11_n_0 ),
+    \pwm_us_i[31]_i_4 
+       (.I0(\pwm_us_i[31]_i_12_n_0 ),
         .I1(pwm_us[27]),
         .I2(pwm_us[28]),
         .I3(pwm_us[29]),
         .I4(pwm_us[30]),
-        .O(\pwm_us_i[31]_i_3_n_0 ));
+        .O(\pwm_us_i[31]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \pwm_us_i[31]_i_4 
+    \pwm_us_i[31]_i_5 
        (.I0(pwm_us[18]),
         .I1(pwm_us[17]),
-        .I2(\pwm_us_i[31]_i_12_n_0 ),
-        .I3(\pwm_us_i[31]_i_13_n_0 ),
-        .I4(\pwm_us_i[31]_i_14_n_0 ),
-        .I5(\pwm_us_i[31]_i_15_n_0 ),
-        .O(\pwm_us_i[31]_i_4_n_0 ));
+        .I2(\pwm_us_i[31]_i_13_n_0 ),
+        .I3(\pwm_us_i[31]_i_14_n_0 ),
+        .I4(\pwm_us_i[31]_i_15_n_0 ),
+        .I5(\pwm_us_i[31]_i_16_n_0 ),
+        .O(\pwm_us_i[31]_i_5_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
-    \pwm_us_i[31]_i_5 
+    \pwm_us_i[31]_i_6 
        (.I0(pwm_us[26]),
         .I1(pwm_us[25]),
         .I2(pwm_us[24]),
         .I3(pwm_us[23]),
-        .O(\pwm_us_i[31]_i_5_n_0 ));
+        .O(\pwm_us_i[31]_i_6_n_0 ));
   LUT2 #(
     .INIT(4'h2)) 
-    \pwm_us_i[31]_i_6 
+    \pwm_us_i[31]_i_7 
        (.I0(add_sync_1),
         .I1(add_prev),
-        .O(\pwm_us_i[31]_i_6_n_0 ));
+        .O(\pwm_us_i[31]_i_7_n_0 ));
   LUT3 #(
     .INIT(8'h65)) 
-    \pwm_us_i[31]_i_7 
+    \pwm_us_i[31]_i_8 
        (.I0(pwm_us[31]),
         .I1(add_prev),
         .I2(add_sync_1),
-        .O(\pwm_us_i[31]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'h4B)) 
-    \pwm_us_i[31]_i_8 
-       (.I0(add_prev),
-        .I1(add_sync_1),
-        .I2(pwm_us[30]),
         .O(\pwm_us_i[31]_i_8_n_0 ));
   LUT3 #(
     .INIT(8'h4B)) 
     \pwm_us_i[31]_i_9 
        (.I0(add_prev),
         .I1(add_sync_1),
-        .I2(pwm_us[29]),
+        .I2(pwm_us[30]),
         .O(\pwm_us_i[31]_i_9_n_0 ));
   LUT2 #(
     .INIT(4'hB)) 
@@ -513,30 +526,30 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .I1(add_sync_1),
         .I2(pwm_us[4]),
         .O(\pwm_us_i[7]_i_5_n_0 ));
-  FDRE #(
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[0] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[3]_i_1_n_7 ),
-        .Q(pwm_us[0]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
+        .Q(pwm_us[0]));
+  FDPE #(
+    .INIT(1'b1)) 
     \pwm_us_i_reg[10] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
         .D(\pwm_us_i_reg[11]_i_1_n_5 ),
-        .Q(pwm_us[10]),
-        .R(1'b0));
-  FDRE #(
+        .PRE(clear),
+        .Q(pwm_us[10]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[11] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[11]_i_1_n_4 ),
-        .Q(pwm_us[11]),
-        .R(1'b0));
+        .Q(pwm_us[11]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[11]_i_1 
        (.CI(\pwm_us_i_reg[7]_i_1_n_0 ),
@@ -545,38 +558,38 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .DI(pwm_us[11:8]),
         .O({\pwm_us_i_reg[11]_i_1_n_4 ,\pwm_us_i_reg[11]_i_1_n_5 ,\pwm_us_i_reg[11]_i_1_n_6 ,\pwm_us_i_reg[11]_i_1_n_7 }),
         .S({\pwm_us_i[11]_i_2_n_0 ,\pwm_us_i[11]_i_3_n_0 ,\pwm_us_i[11]_i_4_n_0 ,\pwm_us_i[11]_i_5_n_0 }));
-  FDRE #(
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[12] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[15]_i_1_n_7 ),
-        .Q(pwm_us[12]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[12]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[13] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[15]_i_1_n_6 ),
-        .Q(pwm_us[13]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[13]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[14] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[15]_i_1_n_5 ),
-        .Q(pwm_us[14]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[14]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[15] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[15]_i_1_n_4 ),
-        .Q(pwm_us[15]),
-        .R(1'b0));
+        .Q(pwm_us[15]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[15]_i_1 
        (.CI(\pwm_us_i_reg[11]_i_1_n_0 ),
@@ -585,38 +598,38 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .DI(pwm_us[15:12]),
         .O({\pwm_us_i_reg[15]_i_1_n_4 ,\pwm_us_i_reg[15]_i_1_n_5 ,\pwm_us_i_reg[15]_i_1_n_6 ,\pwm_us_i_reg[15]_i_1_n_7 }),
         .S({\pwm_us_i[15]_i_2_n_0 ,\pwm_us_i[15]_i_3_n_0 ,\pwm_us_i[15]_i_4_n_0 ,\pwm_us_i[15]_i_5_n_0 }));
-  FDRE #(
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[16] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[19]_i_1_n_7 ),
-        .Q(pwm_us[16]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[16]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[17] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[19]_i_1_n_6 ),
-        .Q(pwm_us[17]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[17]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[18] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[19]_i_1_n_5 ),
-        .Q(pwm_us[18]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[18]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[19] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[19]_i_1_n_4 ),
-        .Q(pwm_us[19]),
-        .R(1'b0));
+        .Q(pwm_us[19]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[19]_i_1 
        (.CI(\pwm_us_i_reg[15]_i_1_n_0 ),
@@ -625,46 +638,46 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .DI(pwm_us[19:16]),
         .O({\pwm_us_i_reg[19]_i_1_n_4 ,\pwm_us_i_reg[19]_i_1_n_5 ,\pwm_us_i_reg[19]_i_1_n_6 ,\pwm_us_i_reg[19]_i_1_n_7 }),
         .S({\pwm_us_i[19]_i_2_n_0 ,\pwm_us_i[19]_i_3_n_0 ,\pwm_us_i[19]_i_4_n_0 ,\pwm_us_i[19]_i_5_n_0 }));
-  FDRE #(
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[1] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[3]_i_1_n_6 ),
-        .Q(pwm_us[1]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[1]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[20] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[23]_i_1_n_7 ),
-        .Q(pwm_us[20]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[20]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[21] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[23]_i_1_n_6 ),
-        .Q(pwm_us[21]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[21]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[22] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[23]_i_1_n_5 ),
-        .Q(pwm_us[22]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[22]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[23] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[23]_i_1_n_4 ),
-        .Q(pwm_us[23]),
-        .R(1'b0));
+        .Q(pwm_us[23]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[23]_i_1 
        (.CI(\pwm_us_i_reg[19]_i_1_n_0 ),
@@ -673,38 +686,38 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .DI(pwm_us[23:20]),
         .O({\pwm_us_i_reg[23]_i_1_n_4 ,\pwm_us_i_reg[23]_i_1_n_5 ,\pwm_us_i_reg[23]_i_1_n_6 ,\pwm_us_i_reg[23]_i_1_n_7 }),
         .S({\pwm_us_i[23]_i_2_n_0 ,\pwm_us_i[23]_i_3_n_0 ,\pwm_us_i[23]_i_4_n_0 ,\pwm_us_i[23]_i_5_n_0 }));
-  FDRE #(
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[24] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[27]_i_1_n_7 ),
-        .Q(pwm_us[24]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[24]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[25] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[27]_i_1_n_6 ),
-        .Q(pwm_us[25]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[25]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[26] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[27]_i_1_n_5 ),
-        .Q(pwm_us[26]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[26]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[27] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[27]_i_1_n_4 ),
-        .Q(pwm_us[27]),
-        .R(1'b0));
+        .Q(pwm_us[27]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[27]_i_1 
        (.CI(\pwm_us_i_reg[23]_i_1_n_0 ),
@@ -713,46 +726,46 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .DI(pwm_us[27:24]),
         .O({\pwm_us_i_reg[27]_i_1_n_4 ,\pwm_us_i_reg[27]_i_1_n_5 ,\pwm_us_i_reg[27]_i_1_n_6 ,\pwm_us_i_reg[27]_i_1_n_7 }),
         .S({\pwm_us_i[27]_i_2_n_0 ,\pwm_us_i[27]_i_3_n_0 ,\pwm_us_i[27]_i_4_n_0 ,\pwm_us_i[27]_i_5_n_0 }));
-  FDRE #(
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[28] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[31]_i_2_n_7 ),
-        .Q(pwm_us[28]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[28]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[29] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[31]_i_2_n_6 ),
-        .Q(pwm_us[29]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
+        .Q(pwm_us[29]));
+  FDPE #(
+    .INIT(1'b1)) 
     \pwm_us_i_reg[2] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
         .D(\pwm_us_i_reg[3]_i_1_n_5 ),
-        .Q(pwm_us[2]),
-        .R(1'b0));
-  FDRE #(
+        .PRE(clear),
+        .Q(pwm_us[2]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[30] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[31]_i_2_n_5 ),
-        .Q(pwm_us[30]),
-        .R(1'b0));
-  FDRE #(
+        .Q(pwm_us[30]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[31] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[31]_i_2_n_4 ),
-        .Q(pwm_us[31]),
-        .R(1'b0));
+        .Q(pwm_us[31]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[31]_i_2 
        (.CI(\pwm_us_i_reg[27]_i_1_n_0 ),
@@ -760,15 +773,15 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .CYINIT(1'b0),
         .DI({1'b0,pwm_us[30:28]}),
         .O({\pwm_us_i_reg[31]_i_2_n_4 ,\pwm_us_i_reg[31]_i_2_n_5 ,\pwm_us_i_reg[31]_i_2_n_6 ,\pwm_us_i_reg[31]_i_2_n_7 }),
-        .S({\pwm_us_i[31]_i_7_n_0 ,\pwm_us_i[31]_i_8_n_0 ,\pwm_us_i[31]_i_9_n_0 ,\pwm_us_i[31]_i_10_n_0 }));
-  FDRE #(
-    .INIT(1'b0)) 
+        .S({\pwm_us_i[31]_i_8_n_0 ,\pwm_us_i[31]_i_9_n_0 ,\pwm_us_i[31]_i_10_n_0 ,\pwm_us_i[31]_i_11_n_0 }));
+  FDPE #(
+    .INIT(1'b1)) 
     \pwm_us_i_reg[3] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
         .D(\pwm_us_i_reg[3]_i_1_n_4 ),
-        .Q(pwm_us[3]),
-        .R(1'b0));
+        .PRE(clear),
+        .Q(pwm_us[3]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[3]_i_1 
        (.CI(1'b0),
@@ -777,38 +790,38 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .DI({pwm_us[3:1],\pwm_us_i[3]_i_3_n_0 }),
         .O({\pwm_us_i_reg[3]_i_1_n_4 ,\pwm_us_i_reg[3]_i_1_n_5 ,\pwm_us_i_reg[3]_i_1_n_6 ,\pwm_us_i_reg[3]_i_1_n_7 }),
         .S({\pwm_us_i[3]_i_4_n_0 ,\pwm_us_i[3]_i_5_n_0 ,\pwm_us_i[3]_i_6_n_0 ,\pwm_us_i[3]_i_7_n_0 }));
-  FDRE #(
-    .INIT(1'b0)) 
+  FDPE #(
+    .INIT(1'b1)) 
     \pwm_us_i_reg[4] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
         .D(\pwm_us_i_reg[7]_i_1_n_7 ),
-        .Q(pwm_us[4]),
-        .R(1'b0));
-  FDRE #(
+        .PRE(clear),
+        .Q(pwm_us[4]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[5] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[7]_i_1_n_6 ),
-        .Q(pwm_us[5]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
+        .Q(pwm_us[5]));
+  FDPE #(
+    .INIT(1'b1)) 
     \pwm_us_i_reg[6] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
         .D(\pwm_us_i_reg[7]_i_1_n_5 ),
-        .Q(pwm_us[6]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
+        .PRE(clear),
+        .Q(pwm_us[6]));
+  FDPE #(
+    .INIT(1'b1)) 
     \pwm_us_i_reg[7] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
         .D(\pwm_us_i_reg[7]_i_1_n_4 ),
-        .Q(pwm_us[7]),
-        .R(1'b0));
+        .PRE(clear),
+        .Q(pwm_us[7]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \pwm_us_i_reg[7]_i_1 
        (.CI(\pwm_us_i_reg[3]_i_1_n_0 ),
@@ -817,27 +830,27 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
         .DI(pwm_us[7:4]),
         .O({\pwm_us_i_reg[7]_i_1_n_4 ,\pwm_us_i_reg[7]_i_1_n_5 ,\pwm_us_i_reg[7]_i_1_n_6 ,\pwm_us_i_reg[7]_i_1_n_7 }),
         .S({\pwm_us_i[7]_i_2_n_0 ,\pwm_us_i[7]_i_3_n_0 ,\pwm_us_i[7]_i_4_n_0 ,\pwm_us_i[7]_i_5_n_0 }));
-  FDRE #(
-    .INIT(1'b0)) 
+  FDPE #(
+    .INIT(1'b1)) 
     \pwm_us_i_reg[8] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
         .D(\pwm_us_i_reg[11]_i_1_n_7 ),
-        .Q(pwm_us[8]),
-        .R(1'b0));
-  FDRE #(
+        .PRE(clear),
+        .Q(pwm_us[8]));
+  FDCE #(
     .INIT(1'b0)) 
     \pwm_us_i_reg[9] 
        (.C(clk),
         .CE(\pwm_us_i[31]_i_1_n_0 ),
+        .CLR(clear),
         .D(\pwm_us_i_reg[11]_i_1_n_6 ),
-        .Q(pwm_us[9]),
-        .R(1'b0));
+        .Q(pwm_us[9]));
   FDRE #(
     .INIT(1'b0)) 
     sub_prev_reg
        (.C(clk),
-        .CE(1'b1),
+        .CE(rst_n),
         .D(sub_sync_1),
         .Q(sub_prev),
         .R(1'b0));
@@ -845,7 +858,7 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
     .INIT(1'b0)) 
     sub_sync_0_reg
        (.C(clk),
-        .CE(1'b1),
+        .CE(rst_n),
         .D(sub),
         .Q(sub_sync_0),
         .R(1'b0));
@@ -853,7 +866,7 @@ module design_2_increment_pwm_us_0_0_increment_pwm_us
     .INIT(1'b0)) 
     sub_sync_1_reg
        (.C(clk),
-        .CE(1'b1),
+        .CE(rst_n),
         .D(sub_sync_0),
         .Q(sub_sync_1),
         .R(1'b0));
