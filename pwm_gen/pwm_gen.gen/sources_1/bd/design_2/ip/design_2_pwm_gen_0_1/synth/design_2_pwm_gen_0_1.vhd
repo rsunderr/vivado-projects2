@@ -86,7 +86,7 @@ ARCHITECTURE design_2_pwm_gen_0_1_arch OF design_2_pwm_gen_0_1 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_2_pwm_gen_0_1_arch : ARCHITECTURE IS "design_2_pwm_gen_0_1,pwm_gen,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_2_pwm_gen_0_1_arch: ARCHITECTURE IS "design_2_pwm_gen_0_1,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=50000000,C_BITWIDTH=32,C_PULSE_MODE=false,C_RST_PW_US=1500}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_2_pwm_gen_0_1_arch: ARCHITECTURE IS "design_2_pwm_gen_0_1,pwm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_gen,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_CLK_HZ=100000000,C_BITWIDTH=32,C_PULSE_MODE=false,C_RST_PW_US=1500}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_2_pwm_gen_0_1_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -94,14 +94,14 @@ ARCHITECTURE design_2_pwm_gen_0_1_arch OF design_2_pwm_gen_0_1 IS
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF pl_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 pl_clk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF pl_clk: SIGNAL IS "slave pl_clk";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF pl_clk: SIGNAL IS "XIL_INTERFACENAME pl_clk, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF pl_clk: SIGNAL IS "XIL_INTERFACENAME pl_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF rst_n: SIGNAL IS "xilinx.com:signal:reset:1.0 rst_n RST";
   ATTRIBUTE X_INTERFACE_MODE OF rst_n: SIGNAL IS "slave rst_n";
   ATTRIBUTE X_INTERFACE_PARAMETER OF rst_n: SIGNAL IS "XIL_INTERFACENAME rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 BEGIN
   U0 : pwm_gen
     GENERIC MAP (
-      C_CLK_HZ => 50000000,
+      C_CLK_HZ => 100000000,
       C_BITWIDTH => 32,
       C_PULSE_MODE => false,
       C_RST_PW_US => 1500

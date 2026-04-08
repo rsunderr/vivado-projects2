@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Mar 15 23:14:45 2026
-# Process ID         : 6524
+# Start of session at: Sun Mar 15 23:50:36 2026
+# Process ID         : 8344
 # Current directory  : C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1
 # Command line       : vivado.exe -log design_2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_wrapper.tcl
 # Log file           : C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/design_2_wrapper.vds
@@ -19,7 +19,7 @@
 # Host memory        : 6435 MB
 # Swap memory        : 1811 MB
 # Total Virtual      : 8247 MB
-# Available Virtual  : 3571 MB
+# Available Virtual  : 3062 MB
 #-----------------------------------------------------------
 source design_2_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -40,38 +40,38 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2176
+INFO: [Synth 8-7075] Helper process launched with PID 5812
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1107.684 ; gain = 470.109
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1108.531 ; gain = 468.328
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_2_wrapper' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:30]
 INFO: [Synth 8-3491] module 'design_2' declared at 'c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:15' bound to instance 'design_2_i' of component 'design_2' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:46]
 INFO: [Synth 8-638] synthesizing module 'design_2' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:34]
-INFO: [Synth 8-3491] module 'design_2_clk_wiz_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_2_clk_wiz_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'design_2_clk_wiz_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_clk_wiz_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_2_increment_pwm_us_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_increment_pwm_us_0_0_stub.vhdl:6' bound to instance 'increment_pwm_us_0' of component 'design_2_increment_pwm_us_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'design_2_increment_pwm_us_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_increment_pwm_us_0_0_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'design_2_pwm_gen_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_0_stub.vhdl:6' bound to instance 'pwm_gen_0' of component 'design_2_pwm_gen_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'design_2_pwm_gen_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_0_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'design_2_pwm_gen_0_1' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_1_stub.vhdl:6' bound to instance 'pwm_gen_1' of component 'design_2_pwm_gen_0_1' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'design_2_pwm_gen_0_1' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_1_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'design_2_util_vector_logic_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_util_vector_logic_0_0_stub.vhdl:6' bound to instance 'util_vector_logic_0' of component 'design_2_util_vector_logic_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:113]
-INFO: [Synth 8-638] synthesizing module 'design_2_util_vector_logic_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-6524-RYANSUNDERMA8F8/realtime/design_2_util_vector_logic_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_2_clk_wiz_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_2_clk_wiz_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_2_clk_wiz_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_2_increment_pwm_us_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_increment_pwm_us_0_0_stub.vhdl:6' bound to instance 'increment_pwm_us_0' of component 'design_2_increment_pwm_us_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'design_2_increment_pwm_us_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_increment_pwm_us_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_2_pwm_gen_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_0_stub.vhdl:6' bound to instance 'pwm_gen_0' of component 'design_2_pwm_gen_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'design_2_pwm_gen_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_2_pwm_gen_0_1' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_1_stub.vhdl:6' bound to instance 'pwm_gen_1' of component 'design_2_pwm_gen_0_1' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'design_2_pwm_gen_0_1' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_pwm_gen_0_1_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_2_util_vector_logic_0_0' declared at 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_util_vector_logic_0_0_stub.vhdl:6' bound to instance 'util_vector_logic_0' of component 'design_2_util_vector_logic_0_0' [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'design_2_util_vector_logic_0_0' [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/.Xil/Vivado-8344-RYANSUNDERMA8F8/realtime/design_2_util_vector_logic_0_0_stub.vhdl:20]
 INFO: [Synth 8-256] done synthesizing module 'design_2' (0#1) [c:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/synth/design_2.vhd:34]
 INFO: [Synth 8-256] done synthesizing module 'design_2_wrapper' (0#1) [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:30]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1212.746 ; gain = 575.172
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1214.691 ; gain = 574.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1212.746 ; gain = 575.172
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1214.691 ; gain = 574.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1212.746 ; gain = 575.172
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1214.691 ; gain = 574.488
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1214.691 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -94,22 +94,22 @@ Parsing XDC File [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/
 Finished Parsing XDC File [C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1220.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1259.129 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1220.793 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1259.129 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1243.473 ; gain = 605.898
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1259.129 ; gain = 618.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1243.473 ; gain = 605.898
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1259.129 ; gain = 618.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -123,10 +123,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_2_i/pwm_gen_0. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for design_2_i/util_vector_logic_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_2_i/pwm_gen_1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1243.473 ; gain = 605.898
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1259.129 ; gain = 618.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1243.473 ; gain = 605.898
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1259.129 ; gain = 618.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -149,25 +149,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1250.414 ; gain = 612.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1259.129 ; gain = 618.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1426.449 ; gain = 788.875
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1421.395 ; gain = 781.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1426.449 ; gain = 788.875
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1421.395 ; gain = 781.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1436.543 ; gain = 798.969
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1430.980 ; gain = 790.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -185,37 +185,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -245,16 +245,16 @@ Report Cell Usage:
 |7     |OBUF                                |     4|
 +------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 1652.887 ; gain = 984.586
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1652.887 ; gain = 1015.312
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1648.219 ; gain = 963.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1648.219 ; gain = 1008.016
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1652.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1648.219 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1652.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1650.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -262,8 +262,8 @@ Synth Design complete | Checksum: 12640b01
 INFO: [Common 17-83] Releasing license: Synthesis
 38 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:35 . Memory (MB): peak = 1652.887 ; gain = 1251.133
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1652.887 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:27 . Memory (MB): peak = 1650.832 ; gain = 1248.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1650.832 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.runs/synth_1/design_2_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_2_wrapper_utilization_synth.rpt -pb design_2_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 15 23:16:34 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 15 23:52:11 2026...

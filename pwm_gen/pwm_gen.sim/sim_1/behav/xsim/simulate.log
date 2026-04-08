@@ -3,13 +3,3 @@ Note: Starting tb_pwm_gen
 Time: 0 ps  Iteration: 0  Process: /tb_pwm_gen/stim_proc  File: C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.srcs/sim_1/new/testbench.vhd
 Note: Test 1: Expect 1700 us pulse
 Time: 2500100 ns  Iteration: 0  Process: /tb_pwm_gen/stim_proc  File: C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.srcs/sim_1/new/testbench.vhd
-Note: Test 1 passed: pulse width = 1699980000 ps
-Time: 4200130 ns  Iteration: 3  Process: /tb_pwm_gen/stim_proc  File: C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.srcs/sim_1/new/testbench.vhd
-Note: Starting tb_pwm_gen
-Time: 4700130 ns  Iteration: 0  Process: /tb_pwm_gen/stim_proc  File: C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.srcs/sim_1/new/testbench.vhd
-Note: Test 1: Expect 1700 us pulse
-Time: 7200230 ns  Iteration: 0  Process: /tb_pwm_gen/stim_proc  File: C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.srcs/sim_1/new/testbench.vhd
-Note: Test 1 passed: pulse width = 1699980000 ps
-Time: 8900250 ns  Iteration: 3  Process: /tb_pwm_gen/stim_proc  File: C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.srcs/sim_1/new/testbench.vhd
-Note: Starting tb_pwm_gen
-Time: 9400250 ns  Iteration: 0  Process: /tb_pwm_gen/stim_proc  File: C:/Users/ryansundermeyer/vivado-projects/pwm_gen/pwm_gen.srcs/sim_1/new/testbench.vhd

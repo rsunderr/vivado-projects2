@@ -14,6 +14,6 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling module xil_defaultlib.glbl
-Compiling architecture rtl of entity xil_defaultlib.pwm_gen [pwm_gen_default]
+Compiling architecture rtl of entity xil_defaultlib.pwm_gen [\pwm_gen(c_rst_pw_us=1500)\]
 Compiling architecture sim of entity xil_defaultlib.tb_pwm_gen
 Built simulation snapshot tb_pwm_gen_behav

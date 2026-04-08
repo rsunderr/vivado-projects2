@@ -62,8 +62,8 @@ begin
         ----------------------------------------------------------------
         -- Initial conditions
         ----------------------------------------------------------------
-        en          <= '0';
-        rst_n       <= '0';
+        --en          <= '0';
+        rst_n       <= '1';
         pulse_us    <= (others => '0');
 
         wait for 100 ns;
@@ -72,11 +72,9 @@ begin
         -- Attempt reset
         ----------------------------------------------------------------
         en      <= '1';
-        --rst_n   <= '0';
-        wait for 1500 us;
-        
         rst_n   <= '1';
-        
+        wait for 1500 us;
+                
         wait for 1000 us;
 
         ----------------------------------------------------------------
@@ -103,9 +101,9 @@ begin
         -- Cut off middle of signal
         ----------------------------------------------------------------
         
-        pulse_us <= std_logic_vector(to_unsigned(1700, pulse_us'length));
-        wait for 500 us;
-        rst_n   <= '0';
+        --pulse_us <= std_logic_vector(to_unsigned(1700, pulse_us'length));
+        --wait for 500 us;
+        --rst_n   <= '0';
 
         ----------------------------------------------------------------
         -- Confirm one-shot behavior

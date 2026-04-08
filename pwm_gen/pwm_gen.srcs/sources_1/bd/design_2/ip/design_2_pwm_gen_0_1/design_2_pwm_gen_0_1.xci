@@ -8,14 +8,14 @@
     "gen_directory": "../../../../../../pwm_gen.gen/sources_1/bd/design_2/ip/design_2_pwm_gen_0_1",
     "parameters": {
       "component_parameters": {
-        "C_CLK_HZ": [ { "value": "50000000", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "C_CLK_HZ": [ { "value": "100000000", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_BITWIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_PULSE_MODE": [ { "value": "false", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "C_RST_PW_US": [ { "value": "1500", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "design_2_pwm_gen_0_1", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "C_CLK_HZ": [ { "value": "50000000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_CLK_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_BITWIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_PULSE_MODE": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
         "C_RST_PW_US": [ { "value": "1500", "resolve_type": "generated", "format": "long", "usage": "all" } ]
@@ -70,7 +70,7 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "FREQ_HZ": [ { "value": "50000000", "value_src": "ip_propagated", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "100000000", "value_src": "ip_propagated", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_src": "ip_propagated", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "/clk_wiz_0_clk_out1", "value_src": "ip_propagated", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
